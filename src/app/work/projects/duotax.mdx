@@ -1,0 +1,70 @@
+---
+title: "Building an AI-Powered CRM & Communication Suite for Duotax"
+publishedAt: "2024-03-01"
+summary: "Development of AI-driven voice and email automation systems using Salesforce, Node.js, and Twilio to enhance customer support efficiency and streamline business operations."
+images:
+  - "/images/projects/Duotax/Duotax_Full_Logo.jpg"
+  - "/images/projects/Duotax/Lead_Details_Page.png"
+  - "/images/projects/Duotax/Outlook_Email_1.png"
+  - "/images/projects/Duotax/Outlook_Email_2.png"
+  - "/images/projects/Duotax/Outlook_Email_3.png"
+team:
+  - name: "Ronak Gediya"
+    role: "Salesforce Developer"
+    avatar: "/images/Ronak_New_Year.jpg"
+    linkedIn: "https://www.linkedin.com/company/duotax/"
+---
+
+## Overview
+
+Development of AI-driven voice and email automation systems using Salesforce, Node.js, and Twilio to streamline customer support workflows and business data operations.
+
+## Key Features
+
+- **AI Voice Calling System**: Created a real-time, AI-powered voice calling system using Twilio, Deepgram, and WebSockets. Integrated ChatGPT to generate intelligent live responses, improving CSR team productivity and reducing manual workload.
+- **AI-Powered Outlook Email System Clone**: Recreated a fully customizable Outlook-style email platform in Salesforce using LWC with several advanced features:
+  - **Auto Reply Generation**: Used OpenAI to generate contextual, intelligent replies to incoming emails based on case history and email content.
+  - **Lead & Opportunity Extraction**: Automatically parsed incoming email content using AI and rule-based logic to capture and populate potential leads or opportunities in Salesforce.
+  - **Email Attachment Handling**: Enabled users to view and attach email files (PDFs, images, docs) directly to any Salesforce record with a single button click.
+  - **Search and Filter Capabilities**: Implemented advanced filters (by sender, subject, date, etc.) to enhance CSR usability and speed.
+  - **Categorization and Color Coding**: Custom rules to highlight and categorize emails (e.g., new lead, follow-up, support case) with color-coded labels.
+  - **Inline Email Viewer**: Developed a smooth, in-app reading experience with rich-text and file preview support.
+  - **Bulk Actions and Tracking**: Support for selecting multiple emails to log or attach, and track their association with related records.
+- **Customer Portal & API Layer**: Developed a React-based customer portal with dynamic data rendered from Apex REST APIs. Built a Node.js middleware to securely connect the portal with Salesforce and handle data requests/responses.
+- **Salesforce Automation**: Built custom Flows, Process Builders, and LWC components to manage leads, opportunities, property data, and inspections. Enhanced UX with dynamic editors and automated business rules.
+- **Microsoft Calendar Integration**: Connected Salesforce with Microsoft Calendar for automatic scheduling of property inspections. Enabled real-time creation, updates, and deletions of events based on Salesforce triggers.
+- **Aircall Integration**: Integrated Aircall with Salesforce to capture incoming call logs, call summaries, agent assignments, and team data using Webhooks and REST APIs.
+- **Xero Integration**: Automated invoicing and receipt management by integrating Xero APIs with Salesforce. Built scheduled batch processes for syncing financial data and ensuring accurate reconciliation.
+- **HubSpot Integration**: Created real-time contact sync between Salesforce and HubSpot using custom webhooks and APIs. Ensured Salesforce remained the single source of truth for contact records.
+- **CoreLogic Integration**: Used CoreLogic API to fetch property data based on customer details. Designed custom LWC components for visualizing property insights and linking them to leads and opportunities.
+- **OpenAI & NLP Utilities**: Built LWC interfaces and background services that use OpenAI (ChatGPT), Eleven Labs, and AssemblyAI for automating small CSR tasks such as summarizing interactions, generating content, and transcribing data.
+
+## Technologies Used
+
+- **Salesforce**:
+  - Apex (synchronous and asynchronous: `@future`, Queueable, Batchable)  
+  - Lightning Web Components (LWC)  
+  - Apex REST APIs and Named Credentials  
+  - Platform Events and Change Data Capture (CDC)  
+  - Custom Metadata and Custom Settings  
+  - Flows and Process Builder  
+  - Visualforce for legacy interfaces  
+  - Validation Rules and Duplicate Rules  
+  - Custom Objects and Record Types  
+  - Sharing Rules and Field-Level Security  
+  - Reports, Dashboards, and List Views  
+  - Integration via Webhooks and External Services  
+  - Test Classes and Deployment via Change Sets and VS Code SFDX 
+- **Node.js**: For Duotax’s customer-facing portal.
+- **React.js**: Middleware for handling external integrations.
+- **Twilio & WebSocket**: Voice call automation and real-time processing.
+- **OpenAI, Deepgram, AssemblyAI, Eleven Labs**: AI & transcription capabilities.
+- **Microsoft Calendar, Xero, CoreLogic, HubSpot, Aircall**: Business platform integrations.
+
+## Challenges and Learnings
+
+Key challenges included evaluating the right AI stack for real-time interaction and transcription, managing multiple third-party integrations in a secure and scalable manner, and aligning business-specific logic with automated workflows. Gained deep experience in integrating AI tools, handling real-time data sync, and designing secure middleware services.
+
+## Outcome
+
+Successfully delivered a robust, AI-powered communication and CRM solution tailored for Duotax. Improved efficiency across customer support, lead management, scheduling, and reporting. The platform laid a scalable foundation for future automation and enhanced customer experience across departments.

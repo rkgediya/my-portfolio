@@ -1,0 +1,63 @@
+---
+title: "Salesforce-Powered Lead Management & Communication System for Rocketship Financial"
+publishedAt: "2024-02-28"
+summary: "Designed and implemented a robust, scalable Salesforce solution for Rocketship Financial with advanced lead management, duplicate detection, Visualforce calendar, LWC interfaces, and integrated APIs."
+images:
+  - "/images/projects/Rocketship/Rocketship_Financial_Full_Logo.png"
+  - "/images/projects/Rocketship/Task_Calender_1.png"
+  - "/images/projects/Rocketship/Task_Calender_2.png"
+  - "/images/projects/Rocketship/Search_Lead_By_PIN.png"
+  - "/images/projects/Rocketship/Lead_Record_Page.png"
+  - "/images/projects/Rocketship/History_Traking.png"
+team:
+  - name: "Ronak Gediya"
+    role: "Salesforce Developer"
+    avatar: "/images/Ronak_New_Year.jpg"
+    linkedIn: "https://www.linkedin.com/in/ronakgediya/"
+---
+
+## Overview
+
+Led the architecture and implementation of an end-to-end Salesforce CRM system for Rocketship Financial to streamline lead tracking, task management, and communication processes. Delivered part-time over a 9-month period, this project focused on customizing Salesforce to support operational growth and data integrity.
+
+## Key Features
+
+- **Custom LWC Pages for Lead & Account**: Built Lightning Web Component-based record pages for Lead and Account objects, delivering enhanced UI and dynamic functionality for end users.
+- **Lead Activity Audit Trail**: Developed a transparent tracking system using Apex and LWC to log and display all updates, merges, and conversions performed on lead records.
+- **Advanced Duplicate Record Merging**: Created a robust duplicate detection and merging tool using LWC and batch processing. Included a visual UI to manage duplicate groups with field-level history tracking.
+- **Duplicate Prevention Mechanisms**: Used custom logic and Salesforce duplicate rules to detect and prevent creation of redundant lead or account records.
+- **REST API Integrations**: Integrated third-party platforms to enable automated lead upserts into Salesforce, ensuring accurate and real-time data sync.
+- **Lead Management Enhancements**:
+  - **PIN Search UI**: Built custom UI for searching and locating leads by unique PINs and metadata.
+  - **Round Robin Distribution**: Developed logic for balanced assignment of leads across users.
+  - **Custom Lead Conversion Process**: Replaced standard conversion flow with a tailored Apex-based version for greater control and flexibility.
+  - **List View Assignment Management**: Programmatic control of lead list views for efficient task segregation.
+- **Task Calendar with Visualforce + DayPilot**: Designed a calendar interface using the DayPilot JS library within a Visualforce page. Enabled hierarchical permissions and collision prevention for task scheduling.
+- **Dialpad Integration**: Configured AppExchange Dialpad package with Salesforce Call Center and Open CTI. Added Dialpad to Utility Bar for native call handling from within the Salesforce UI.
+- **Third-party API Integrations**:
+  - **EvvoFinancial and BeyondFinance**: Bi-directional data sync for lead intake and disposition updates using RESTful API integrations.
+- **UI & Metadata Customization**: Built and configured utility bars, global actions, record types, layouts, and field validation rules to match business processes and user flows.
+
+## Technologies Used
+
+- **Salesforce**:
+  - Apex (Triggers, Batch Apex for merging and audit trail)
+  - Lightning Web Components (LWC)
+  - Apex REST APIs and Named Credentials
+  - Visualforce with JavaScript Libraries (DayPilot)
+  - Custom Objects, Fields, Validation Rules, Duplicate Rules
+  - Record Types and Custom Page Layouts
+  - Flows and Process Builder
+  - Utility Bar Configuration and Open CTI
+  - Deployment via Change Sets and VS Code SFDX
+  - Integration with External APIs (EvvoFinancial, BeyondFinance)
+- **Dialpad**: CTI Integration with Salesforce for calling and call tracking.
+- **JavaScript Libraries**: DayPilot for calendar and scheduling UI inside Visualforce.
+
+## Challenges and Learnings
+
+Faced challenges in designing scalable batch logic for large datasets, handling lead merge conflicts with complete auditability, and synchronizing third-party API data within governor limits. Gained deep experience in delivering high-performance LWC UIs and customizing standard Salesforce behavior to meet business-specific needs.
+
+## Outcome
+
+Delivered a fully tailored Salesforce CRM solution that empowered Rocketship Financial’s sales and support teams with enhanced visibility, streamlined operations, and reduced data duplication. Significantly improved task coordination and lead lifecycle management, providing a foundation for continued growth and automation.
