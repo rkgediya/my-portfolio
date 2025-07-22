@@ -1,4 +1,5 @@
-import { withMDX } from '@next/mdx';
+import pkg from '@next/mdx';
+const { withMDX } = pkg;
 
 const nextConfig = {
   output: 'export',
