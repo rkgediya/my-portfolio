@@ -5,9 +5,13 @@ const withMDX = createMDX({
 });
 
 const nextConfig = {
+  output: 'export',
   basePath: '/my-portfolio',
   assetPrefix: '/my-portfolio',
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+  images: {
+    unoptimized: true
+  },
   sassOptions: {
     compiler: 'modern',
     silenceDeprecations: ['legacy-js-api'],
