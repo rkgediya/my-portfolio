@@ -1,17 +1,20 @@
-import mdx from "@next/mdx";
+// next.config.js
+import nextMDX from '@next/mdx';
 
-const withMDX = mdx({
+const withMDX = nextMDX({
   extension: /\.mdx?$/,
-  options: {},
+  options: {
+    // Any mdx options here (optional)
+  },
 });
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  pageExtensions: ["ts", "tsx", "md", "mdx"],
-  transpilePackages: ["next-mdx-remote"],
+  pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
+  transpilePackages: ['next-mdx-remote'],
   sassOptions: {
-    compiler: "modern",
-    silenceDeprecations: ["legacy-js-api"],
+    compiler: 'modern',
+    silenceDeprecations: ['legacy-js-api'],
   },
 };
 
