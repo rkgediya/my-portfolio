@@ -1,7 +1,9 @@
 import { withMDX } from '@next/mdx';
 
 const nextConfig = {
-  output: 'export', // Required for GitHub Pages
+  output: 'export',
+  basePath: '/my-portfolio',
+  assetPrefix: '/my-portfolio', 
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
   sassOptions: {
     compiler: 'modern',
@@ -12,4 +14,3 @@ const nextConfig = {
 export default withMDX({
   extension: /\.mdx?$/,
 })(nextConfig);
-
