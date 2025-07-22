@@ -1,10 +1,13 @@
-import pkg from '@next/mdx';
-const { withMDX } = pkg;
+import createMDX from '@next/mdx';
+
+const withMDX = createMDX({
+  extension: /\.mdx?$/,
+});
 
 const nextConfig = {
   output: 'export',
   basePath: '/my-portfolio',
-  assetPrefix: '/my-portfolio', 
+  assetPrefix: '/my-portfolio',
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
   sassOptions: {
     compiler: 'modern',
@@ -12,6 +15,4 @@ const nextConfig = {
   },
 };
 
-export default withMDX({
-  extension: /\.mdx?$/,
-})(nextConfig);
+export default withMDX(nextConfig);
