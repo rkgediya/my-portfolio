@@ -1,10 +1,12 @@
 {
   "name": "@once-ui-system/magic-portfolio",
   "version": "2.2.0",
+  "homepage": "https://rkgediya.github.io/my-portfolio",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "export": "next export",
     "lint": "next lint"
   },
   "dependencies": {
